@@ -1,0 +1,11 @@
+def max_min(n):
+	large = 1
+	small = 0
+	for i in n:
+		if large == small:
+			return len(n)
+		elif i > large:
+			large = i
+		else:
+			small = i
+	return ([small, large])
